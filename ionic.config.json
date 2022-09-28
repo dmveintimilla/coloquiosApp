@@ -1,0 +1,7 @@
+{
+  "name": "coloquiosApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

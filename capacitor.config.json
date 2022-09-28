@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "coloquiosApp",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
