@@ -1,17 +1,63 @@
-<ion-header [translucent]="true">
+<ion-header [translucent]="false">
   <ion-toolbar>
     <ion-title>
-      Tab 2
+      Mi perfil
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" >
+  
+  <div class="" >
+    <div class=" ticket">
+      <!-- <ion-item *ngFor="let comment of comentarios">
+        <ion-label class="normal">{{comment.name1}}
+          <p class="normal">{{comment.apellido}}</p>
+          <p>{{comment.id}}</p>
+        </ion-label>
+      </ion-item> -->
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+      <ion-text color="dark" class="ion-text-center">
+        <h1>{{currentUser?currentUser.first_name:"Usuario"}} {{currentUser?currentUser.last_name:"Usuario"}}</h1>
+        
+        <!-- <h1>{{comentarios.nombre}}</h1> -->
+      </ion-text>
+
+      <ion-text color="dark" class="ion-text-center">
+        <!-- <h3>00206037</h3>
+        <h3>00206037</h3> -->
+
+        <h3>{{currentUser?currentUser.banner:"Usuario"}}</h3>
+      </ion-text>
+      
+      <!-- <div class="caja">
+        <img src="/assets/img/ivan.jpg" />
+      </div> -->
+
+      <ion-grid>
+        <ion-row class="ion-justify-content-center">
+          <ion-col size="12">
+            <button ion-button block (click)="process();">Generar</button>
+          </ion-col>
+        </ion-row>
+      <ion-row class="ion-justify-content-center">
+        <ion-col>
+          
+          <img *ngIf="displayQrCode()" [src]="generated" class="qr" />
+        </ion-col>
+  </ion-row>
+</ion-grid>
+     
+      <ion-text class="ion-text-center">
+        <!-- <button ion-button block (click)="process();">Generar</button> -->
+      </ion-text>
+        
+        
+         
+      <!-- <ion-img [src]="./assets/img/ivan.jpg"></ion-img> -->
+    </div>
+
+  </div>
+  
+  <!-- <app-explore-container name="Tab 2 page"></app-explore-container> -->
 </ion-content>

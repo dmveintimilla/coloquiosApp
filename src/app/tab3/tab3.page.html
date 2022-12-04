@@ -1,17 +1,44 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 3
+      Mi progreso
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+  <!-- <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">Tab 3</ion-title>
     </ion-toolbar>
-  </ion-header>
+  </ion-header> -->
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  <ion-card>
+    <ion-item color="primary">
+      <ion-icon slot="start" name="pin-outline"></ion-icon>
+      <ion-label>Importante</ion-label>
+    </ion-item>
+
+    <ion-card-content>
+      Recuerda que debes completar 40 horas de coloquios, desde primer semestre hasta tu último semestre
+    </ion-card-content>
+
+  </ion-card>
+  <div class="ion-text-center">
+    <ion-text color="primary">Horas asistidas</ion-text>
+    <ion-text color="primary"> por medio de la app</ion-text>
+    <h1 color="primary">38/40</h1>
+  </div>
+
+  <ion-grid fixed>
+
+    <ion-row class="ion-justify-content-center">
+      <div role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="--value:95"></div>
+    </ion-row>
+  </ion-grid>
+
+
+
+
+  <!-- <app-explore-container name="Tab 3 page"></app-explore-container> -->
 </ion-content>

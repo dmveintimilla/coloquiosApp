@@ -1,0 +1,36 @@
+<ion-content class="ion-padding">
+  <div class="">
+    <ion-text color="tertiary">
+      <h2><b>Ingresar</b></h2>
+      
+    </ion-text>
+    <ion-item class="ion-no-padding ion-no-border" lines="none"> 
+      <ion-label position="stacked" class="ion-padding-bottom">Email</ion-label>
+      <ion-input type="text" placeholder="correo@estud.usfq.edu.ec" class="ion-padding-vertical currentInput" #email required></ion-input>
+    </ion-item>
+    <ion-item class="ion-no-padding ion-no-border ion-padding-top" lines="none"> 
+      <ion-label position="stacked" class="ion-padding-bottom">Password</ion-label>
+      <ion-input type="password" class="ion-padding-vertical currentInput" #password required></ion-input>
+    </ion-item>
+
+    <ion-button  expand="block" shape="round" color="primary" style="margin-top: 10%;" class="ion-padding-vertical vh-btn"  (click)="logIn(email, password)">
+      Ingresar
+    </ion-button>
+    <div class="centerVH ion-no-padding pt-3">
+      <div>
+        <p>¿Olvidaste tu contraseña?
+          <a class="hl-dg" routerLink="/password-reset"><b>Restablecer contraseña</b></a>
+        </p>
+      </div>
+      
+    </div>
+    <div class="centerVH ion-no-padding ion-margin-top">
+        <ion-text color="tertiary"  (click)="router.navigate(['signup'])">
+          <h6>¿No tienes cuenta?</h6>
+        </ion-text>
+    </div>
+    <ion-button expand="block" shape="round" color="primary" class="ion-padding-vertical vh-btn" routerLink="/signup">
+      Crear una cuenta
+    </ion-button>
+  </div>
+</ion-content>

@@ -24,3 +24,66 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+/* Import font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,600;1,100&display=swap');
+
+.titulo{
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: #C41B1E;
+}
+
+.subtitulo{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+.normal{
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 14px !important;
+    color: black !important;
+
+}
+
+
+.height-100{
+    height: 100%;
+}
+
+.height-80{
+    height: 80%;
+}
+
+.height-60{
+    height: 60%;
+}
+
+.height-40{
+    height: 40%;
+}
+
+.height-20{
+    height: 20%;
+}
+
+
+/*INPUT*/
+.ion-input{
+    border-bottom: var(--ion-color-primary);
+}
+
+.currentInput{
+    border-bottom: 1px solid var(--ion-color-primary-tint) !important;
+}
+
+.currentInput:hover, .currentInput:focus{
+    border-bottom: 1px solid var(--ion-color-primary-shade) !important;
+}
+
+.item-has-focus{
+    --highlight-background: var(--ion-color-primary);
+}

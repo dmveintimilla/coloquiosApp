@@ -1,0 +1,79 @@
+<ion-toolbar color="tertiary" style="border-radius: 0px 0px 15px 15px;" class="ion-padding-horizontal">
+  <ion-icon slot="start" name="arrow-back-outline" size="large" (click)="backButtonClick()"></ion-icon>
+  <div style="" class="centerVH">
+    <h5 class="">Añadir Coloquio</h5>
+  </div>
+</ion-toolbar>
+
+<ion-content class="ion-padding">
+
+  <div class="text-center">
+    <ion-button class="normal" (click)="nuevo()" color="dark" shape="default">
+      Añadir coloquio
+    </ion-button>
+  </div>
+
+  <div *ngIf="enableNewColoquio">
+    <ion-item>
+      <ion-buttons slot="end">
+        <ion-button (click)="enableNewColoqui = false">
+          <ion-icon slot="start" name="close"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-item>
+
+
+    <ion-card class="nameCard">
+      <ion-item lines="none">
+        <ion-label position="stacked" class="ion-padding-bottom ultrathin">Nombre Coloquio</ion-label>
+        <ion-input [(ngModel)]="newColoquio.nombre" type="text" placeholder="Coloquio: Data Science" class="ion-margin-vertical"></ion-input>
+      </ion-item>
+    </ion-card>
+
+    <ion-item lines="none">
+      <ion-label position="stacked" class="ion-padding-bottom ultrathin">Lugar</ion-label>
+      <ion-input [(ngModel)]="newColoquio.lugar" type="text" placeholder="Teatro Shakespeare"></ion-input>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-label position="stacked" class="ion-padding-bottom ultrathin">Cantidad máxima de estudiantes</ion-label>
+      <ion-input [(ngModel)]="newColoquio.cantidad" type="number" placeholder="200"></ion-input>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-label position="stacked" class="ion-padding-bottom ultrathin">Fecha y Hora del Coloquio</ion-label>
+      <ion-datetime value="2022-04-21T00:00:00" min="2022-03-01T00:00:00" max="2022-12-31T23:59:59"></ion-datetime>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-label position="stacked" class="ion-padding-bottom ultrathin">Foto</ion-label>
+      <ion-buttons slot="end">
+        <ion-button>
+          <label for="file-upload">
+            <ion-icon name="images-outline"></ion-icon>
+          </label>
+          <input (change)="newImageUpload($event)" id="file-upload" style="display:none;" type="file" accept="image/*">
+        </ion-button>
+      </ion-buttons>
+    </ion-item>
+    <div class="centerVH ion-no-padding" style="text-align: center; height: fit-content;">
+      <ion-button (click)="guardarColoquio()" expand="block" shape="round" color="primary" style="margin-top: 10%;"
+        class="ion-padding-vertical vh-btn">
+        Añadir coloquio
+      </ion-button>
+    </div>
+  </div>
+
+  <ion-item *ngFor="let coloquio of coloquios">
+    <ion-label class="normal">{{coloquio.nombre}}</ion-label>
+    <ion-buttons slot="end">
+
+      <ion-button (click)=" newColoquio = coloquio; enableNewColoquio =true">
+        <ion-icon slot="icon-only" name="create"></ion-icon>
+      </ion-button>
+
+      <ion-button (click)="deleteColoquio(coloquio)">
+        <ion-icon slot="icon-only" name="trash-bin" color="danger"></ion-icon>
+      </ion-button>
+
+    </ion-buttons>
+  </ion-item>
+
+</ion-content>

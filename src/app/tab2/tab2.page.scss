@@ -1,0 +1,68 @@
+ion-content{
+  --ion-background-color:#C41B1E;
+}
+// background-content{
+//   background-color: #C41B1E;
+// }
+.box {
+    // display:inline-grid;
+    // place-content:center;
+    font-size:35px;
+    font-weight:bold;
+    // min-width: 10vw;
+    // width:200px;
+    aspect-ratio:1;
+  }
+  .ticket {
+    font-size:35px;
+    font-weight:bold;
+    // border: none;
+    margin: 5% 10%;
+    height: 80vh;
+    // width: 50vh;
+    // max-width: 85%;
+    border-radius: 12px;
+    background:
+     linear-gradient(135deg,#ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff);
+    --mask: conic-gradient(from -45deg at bottom,#0000,#000 1deg 90deg,#0000 91deg) 50% / 60px 100%;
+    -webkit-mask: var(--mask);
+            mask: var(--mask);
+  }
+
+  .caja{
+    margin: 10px 44px;
+    border: 4px solid #434343;
+    border-radius: 18px;
+    background-color: #434343;
+  }
+
+  .caja img {
+    // border: 18px solid rgb(255, 0, 0);
+    padding: 5px;
+    border-radius: 18px;
+    background-color: 434343;
+    object-fit: cover
+
+  }
+
+  .qr{
+    margin:auto;
+    border: 1px solid #434343;
+    border-radius: 18px;
+    background-color: #434343;
+    height: 140px;
+    width: 140px;
+  }
+
+  .centerLogin {
+    width: 500px;
+    margin: auto
+  }
+
+  .qr img {
+    // border: 18px solid rgb(255, 0, 0);
+    padding: 5px;
+    border-radius: 18px;
+    background-color: 434343;
+
+  }

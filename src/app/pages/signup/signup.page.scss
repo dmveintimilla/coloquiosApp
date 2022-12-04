@@ -1,0 +1,10 @@
+.header-md {
+    /* Removes the toolbar shadow. */
+    background: none;
+  }
+
+.header-md::after {
+    display: none;
+}
+
+  

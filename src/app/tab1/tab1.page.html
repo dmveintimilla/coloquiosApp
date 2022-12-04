@@ -1,17 +1,122 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      Próximos coloquios
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
-</ion-content>
+
+  <ion-content>
+
+    <ion-card>
+      <ion-card-header class="ion-text-center">
+        <ion-card-title>Coloquio</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content class="ion-text-center">
+
+        <h1>Data Science</h1>
+
+
+      </ion-card-content>
+
+      <ion-footer class="ion-text-center">
+        <ion-row>
+          <ion-col>
+            <ion-icon name="calendar-outline"></ion-icon>
+            <ion-card-subtitle>Lunes 20 <br> Agosto, 2023</ion-card-subtitle>
+
+          </ion-col>
+          <ion-col center text-center>
+            <ion-icon name="time-outline"></ion-icon>
+            <ion-card-subtitle>12am</ion-card-subtitle>
+
+          </ion-col>
+
+          <ion-col center text-center>
+            <ion-icon name="location-outline"></ion-icon>
+            <ion-card-subtitle>Teatro Shakespeare</ion-card-subtitle>
+
+          </ion-col>
+        </ion-row>
+      </ion-footer>
+    </ion-card>
+
+    <ion-card>
+      <ion-card-header class="ion-text-center">
+        <ion-card-title>Coloquio</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content class="ion-text-center">
+
+        <h1>Data Science</h1>
+
+
+      </ion-card-content>
+
+      <ion-footer class="ion-text-center">
+        <ion-row>
+          <ion-col>
+            <ion-icon name="calendar-outline"></ion-icon>
+            <ion-card-subtitle>Lunes 20 <br> Agosto, 2023</ion-card-subtitle>
+
+          </ion-col>
+          <ion-col center text-center>
+            <ion-icon name="time-outline"></ion-icon>
+            <ion-card-subtitle>12am</ion-card-subtitle>
+
+          </ion-col>
+
+          <ion-col center text-center>
+            <ion-icon name="location-outline"></ion-icon>
+            <ion-card-subtitle>Teatro Shakespeare</ion-card-subtitle>
+
+          </ion-col>
+        </ion-row>
+      </ion-footer>
+    </ion-card>
+
+    <ion-card>
+      <ion-card-header class="ion-text-center">
+        <ion-card-title>Coloquio</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content class="ion-text-center">
+
+        <h1>Data Science</h1>
+
+
+      </ion-card-content>
+
+      <ion-footer class="ion-text-center">
+        <ion-row>
+          <ion-col>
+            <ion-icon name="calendar-outline"></ion-icon>
+            <ion-card-subtitle>Lunes 20 <br> Agosto, 2023</ion-card-subtitle>
+
+          </ion-col>
+          <ion-col center text-center>
+            <ion-icon name="time-outline"></ion-icon>
+            <ion-card-subtitle>12am</ion-card-subtitle>
+
+          </ion-col>
+
+          <ion-col center text-center>
+            <ion-icon name="location-outline"></ion-icon>
+            <ion-card-subtitle>Teatro Shakespeare</ion-card-subtitle>
+
+          </ion-col>
+        </ion-row>
+      </ion-footer>
+    </ion-card>
+
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed" *ngIf="admin">
+      <!-- <ion-fab-button color="darkgreen" routerLink="/add-coloquio"> -->
+        <ion-fab-button color="darkgreen" routerLink="/config-coloquio">
+        <ion-icon name="add"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+
+  </ion-content>

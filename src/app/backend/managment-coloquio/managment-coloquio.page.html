@@ -1,0 +1,82 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Gestión Coloquios</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-item>
+    <ion-item text-wrap>
+      Coloquio
+      <br>
+      20 Agosto, 2023
+    </ion-item>
+
+    <ion-buttons slot="end">
+      <ion-button (click)=" newColoquio = coloquio; enableNewColoquio =true">
+        <ion-icon slot="icon-only" name="qr-code-outline"></ion-icon>
+      </ion-button>
+
+
+      <ion-button (click)=" newColoquio = coloquio; enableNewColoquio =true">
+        <ion-icon slot="icon-only" name="create"></ion-icon>
+      </ion-button>
+
+      <ion-button (click)="deleteColoquio(coloquio)">
+        <ion-icon slot="icon-only" name="trash-bin" color="danger"></ion-icon>
+      </ion-button>
+
+    </ion-buttons>
+  </ion-item>
+
+  <ion-item>
+    <ion-item text-wrap>
+      Coloquio
+      <br>
+      20 Agosto, 2023
+    </ion-item>
+
+    <ion-buttons slot="end">
+      <ion-button (click)=" newColoquio = coloquio; enableNewColoquio =true">
+        <ion-icon slot="icon-only" name="qr-code-outline"></ion-icon>
+      </ion-button>
+
+
+      <ion-button (click)=" newColoquio = coloquio; enableNewColoquio =true">
+        <ion-icon slot="icon-only" name="create"></ion-icon>
+      </ion-button>
+
+      <ion-button (click)="deleteColoquio(coloquio)">
+        <ion-icon slot="icon-only" name="trash-bin" color="danger"></ion-icon>
+      </ion-button>
+
+    </ion-buttons>
+  </ion-item>
+
+  <ion-item>
+    <ion-item text-wrap>
+      Coloquio
+      <br>
+      20 Julio, 2023
+    </ion-item>
+
+    <ion-buttons slot="end">
+     
+
+      <ion-button (click)="deleteColoquio(coloquio)">
+        <ion-icon slot="icon-only" name="reader-outline" color="danger"></ion-icon>
+      </ion-button>
+
+    </ion-buttons>
+  </ion-item>
+
+
+  <div class="centerVH ion-no-padding m-3" style="text-align: center; height: fit-content;">
+    <ion-button (click)="guardarColoquio()" expand="block" shape="round" color="primary" style="margin-top: 10%;"
+      class="ion-padding-vertical vh-btn">
+      Añadir coloquio
+    </ion-button>
+  </div>
+
+</ion-content>
